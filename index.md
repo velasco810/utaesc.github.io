@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Home
+nav: Home
+order: 1
 permalink: /
-navigation: true
 ---
 
 # Engineering Student Council
