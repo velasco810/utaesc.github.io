@@ -8,7 +8,7 @@ permalink: /officers/
 
 # Executive Officers
 
-Listed below are the executive officers for the 2015-2016 semester.
+Listed below are the executive officers for the 2015-2016 term.
 
 ## President: Abira Syed
 
