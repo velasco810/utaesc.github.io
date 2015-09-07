@@ -1,12 +1,14 @@
 # Site settings
 title: UTA Engineering Student Council
 description: UT Arlington's Engineering Student Council organization website.
+
 helplinks:
-  - 'MavOrgs Page': 'https://mavorgs.collegiatelink.net/organization/esc'
-  - 'College of Engineering': 'http://www.uta.edu/engineering/'
-  - 'Facebook Page': 'https://www.facebook.com/UTAESC'
+  - MavOrgs Page: https://mavorgs.collegiatelink.net/organization/esc
+  - College of Engineering: http://www.uta.edu/engineering/
+  - Facebook Page: https://www.facebook.com/UTAESC
+
 infoblocks:
-  'General UTA Info': |
+  General UTA Info: |
     University of Texas at Arlington <br>
     701 S. Nedderman Drive <br>
     Arlington, TX 76019
