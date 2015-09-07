@@ -27,18 +27,24 @@ body > header em, body > nav > ul, body > main > *, body > footer > * {
 body > header {
   font-size: 1.1em;
   color: #fff;
-  background-color: #4b6cbe;
+  background-color: #1f5ab2;
   overflow: hidden;
 }
 
 body > header em {
   display: block;
-  padding-top: 0.67em;
-  padding-bottom: 0.67em;
   font-style: normal;
   font-weight: 100;
   font-size: 2em;
   margin: auto;
+}
+
+body > header em:first-of-type {
+  padding-top: 0.67em;
+}
+
+body > header em:last-of-type {
+  padding-bottom: 0.67em;
 }
 
 body > header a {
@@ -54,7 +60,7 @@ body > nav {
   color: #fff;
   font-family: sans-serif;
   border-top: 1px solid #fff;
-  background-color: #e18223;
+  background-color: #de7d1b;
   overflow: hidden;
   font-size: 0.88em;
 }
