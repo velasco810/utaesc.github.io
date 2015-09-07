@@ -3,15 +3,13 @@
     <section>
       <h3>Helpful Links</h3>
       <ul>
-        <li>
-          <a href="https://mavorgs.collegiatelink.net/organization/esc">MavOrgs Page</a>
-        </li>
-        <li>
-          <a href="http://www.uta.edu/engineering/">College of Engineering</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/UTAESC">Facebook Page</a>
-        </li>
+      {% for link_hash in site.helplinks %}
+        {% for link in link_hash %}
+          <li>
+            <a href="{{ link[1] }}">{{ link[0] }}</a>
+          </li>
+        {% endfor %}
+      {% endfor %}
       </ul>
     </section>
     <section>
