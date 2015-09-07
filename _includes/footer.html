@@ -12,10 +12,12 @@
       {% endfor %}
       </ul>
     </section>
-    <section>
-      <h3>General UTA Info</h3>
-      <p>University of Texas at Arlington <br> 701 S. Nedderman Drive <br> Arlington, TX 76019</p>
-    </section>
+    {% for infoblock in site.infoblocks %}
+      <section>
+        <h3>{{ infoblock[0] }}</h3>
+        <p>{{ infoblock[1] }}</p>
+      </section>
+    {% endfor %}
     <aside>
       <a href="http://www.naesc.org"><img src="/img/naesc_logo.jpg" width="100" height="100" alt="NAESC Logo"/></a>
       <a href="http://www.uta.edu"><img src="/img/uta_logo.jpg" width="100" height="100" alt="UTA Logo"/></a>
