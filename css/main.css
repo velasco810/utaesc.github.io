@@ -17,7 +17,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-body > header em, body > nav > ul, body > main > *, body > footer > * {
+body > header span, body > nav > ul, body > main > *, body > footer > * {
   padding-left: 16px;
   padding-right: 16px;
   max-width: 1048px;
@@ -31,6 +31,15 @@ body > header {
   overflow: hidden;
 }
 
+body > header img {
+  float: left;
+  height: 96px;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  vertical-align: bottom;
+}
+
 body > header em {
   display: block;
   font-style: normal;
@@ -39,11 +48,17 @@ body > header em {
   margin: auto;
 }
 
-body > header em:first-of-type {
+body > header span {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+
+body > header span em:first-of-type {
   padding-top: 0.67em;
 }
 
-body > header em:last-of-type {
+body > header span em:last-of-type {
   padding-bottom: 0.67em;
 }
 
@@ -173,6 +188,15 @@ body > footer ul > li::before {
 @media only screen and (max-width: 720px) {
   body > header, body > nav {
     text-align: center;
+  }
+
+  body > header img {
+    float: none;
+    margin-right: 0;
+  }
+
+  body > header em {
+    display: none;
   }
 
   body > nav  em, body > nav > ul, body > footer > * {
