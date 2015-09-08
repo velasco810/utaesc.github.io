@@ -27,7 +27,7 @@ body > header span, body > nav > ul, body > main > *, body > footer > * {
 body > header {
   font-size: 1.1em;
   color: #fff;
-  background-color: #2a5eac;
+  background-color: #0064b1;
   overflow: hidden;
 }
 
@@ -75,7 +75,7 @@ body > nav {
   color: #fff;
   font-family: sans-serif;
   border-top: 1px solid #fff;
-  background-color: #de7d1b;
+  background-color: #f58026;
   overflow: hidden;
   font-size: 0.88em;
 }
