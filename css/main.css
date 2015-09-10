@@ -33,10 +33,9 @@ body > header {
 
 body > header img {
   float: left;
-  height: 96px;
-  margin-top: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin-top: 0.67em;
+  margin-right: 0.67em;
+  margin-bottom: 0.67em;
   vertical-align: bottom;
 }
 
