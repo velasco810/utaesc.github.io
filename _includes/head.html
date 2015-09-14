@@ -6,4 +6,7 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   <script type="text/javascript" src="/js/ga.js"></script>
+  {% for script in page.js %}
+    <script type="text/javascript" src="/js/{{ script }}.js"></script>
+  {% endfor %}
 </head>
