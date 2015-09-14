@@ -44,15 +44,6 @@
       };
   }(Date));
 
-  // @ Alex Tsurika - 2013-11-26 http://stackoverflow.com/a/20223090
-  function dateFromISO8601(isoDateString) {
-    var parts = isoDateString.match(/\d+/g);
-    var isoTime = Date.UTC(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
-    var isoDate = new Date(isoTime);
-
-    return isoDate;
-  }
-
   // @ Michael Theriot - 2015-9-13
   var getTimestamp = (function() {
     function pad(s, n) {
@@ -76,7 +67,7 @@
   // @ Michael Theriot - 2015-9-14
   (function(window, gCalId, gCalKey, getTimestamp) {
     var timestamp = (new Date()).toISOString();
-    var fetchUrl = 'https://www.googleapis.com/calendar/v3/calendars/' + gCalId + '/events?orderBy=startTime&singleEvents=true&timestamp=' + timestamp + '&key=' + gCalKey;
+    var fetchUrl = 'https://www.googleapis.com/calendar/v3/calendars/' + gCalId + '/events?orderBy=startTime&singleEvents=true&timeMin=' + timestamp + '&key=' + gCalKey;
     var calUrl = 'https://www.google.com/calendar/embed?src=' + gCalId + '&ctz=America/Chicago';
 
     var Event = function(startTime, endTime, startISO, title, description, location) {
