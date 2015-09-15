@@ -212,7 +212,7 @@ body > footer ul > li::before {
 
 #event-list ol li > h2 + time {
   display: block;
-  background-color: gainsboro;
+  background-color: #e4e3ef;
   padding: 0.4em;
   margin: 0;
 }
@@ -228,11 +228,6 @@ body > footer ul > li::before {
   color: #fff;
   font-weight: normal;
   font-size: 1em;
-}
-
-#event-list ol li h2::after {
-  content: attr(data-timestamp);
-  float: right;
 }
 
 #event-list ol li h2 a {
