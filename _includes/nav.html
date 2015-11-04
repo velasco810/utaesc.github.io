@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+  {% assign pages = site.pages | sort: 'order' %}
+  {% for page in pages %}
+    {% if page.nav %}
+      <li>
+        <a href="{{ page.url }}">{{ page.nav }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</nav>

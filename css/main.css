@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ol li, ul li {
+  margin-left: 1.5em;
+}
+
+body {
+  font-size: 16px;
+  font-family: serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body > header span, body > nav > ul, body > main > *, body > footer > * {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1048px;
+  margin: auto;
+}
+
+body > header {
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #0064b1;
+  overflow: hidden;
+}
+
+body > header img {
+  float: left;
+  margin-top: 0.67em;
+  margin-right: 0.67em;
+  margin-bottom: 0.67em;
+  vertical-align: bottom;
+}
+
+body > header em {
+  display: block;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2em;
+  margin: auto;
+}
+
+body > header span {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+
+body > header span em:first-of-type {
+  padding-top: 0.67em;
+}
+
+body > header span em:last-of-type {
+  padding-bottom: 0.67em;
+}
+
+body > header a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body > header a:hover {
+  text-decoration: inherit;
+}
+
+body > nav {
+  color: #fff;
+  font-family: sans-serif;
+  border-top: 1px solid #fff;
+  background-color: #f58026;
+  overflow: hidden;
+  font-size: 0.88em;
+}
+
+body > nav a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.8em 1em;
+}
+
+body > nav > ul > li ~ li {
+  border-left: 1px solid #fff;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  float: left;
+  margin-left: 0;
+}
+
+body > main {
+  color: #444;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+body > main a {
+  color: #6678D1;
+}
+
+body > main a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+h2 {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+p, ul, ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+body > main h1, body > main h2, body > main h3, body > main h4, body > main h5, body > main h6 {
+  color: #4368ad;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+body > footer {
+  border-top: 1px solid #aaa;
+  color: #444;
+  font-size: 0.9em;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
+  font-family: sans-serif;
+  line-height: 1.4em;
+}
+
+body > footer h1, body > footer h2, body > footer h3, body > footer h4, body > footer h5, body > footer h6 {
+  color: #333;
+  font-weight: normal;
+  font-family: serif;
+}
+
+body > footer > div {
+  overflow: hidden;
+}
+
+body > footer section {
+  float: left;
+}
+
+body > footer section ~ section {
+  margin-left: 2.5em;
+}
+
+body > footer aside {
+  float: right;
+}
+
+body > footer aside img {
+  float: left;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+body > footer ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body > footer ul {
+  list-style-type: none;
+}
+
+body > footer ul > li {
+  margin-left: 0;
+}
+
+body > footer ul > li::before {
+  content: '\00BB ';
+  float: left;
+  margin-right: 0.4em;
+}
+
+#event-list ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#event-list ol li {
+  margin-left: 0;
+  background-color: #fff;
+  border: 1px solid #4368ad;
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+
+#event-list ol li > * {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#event-list ol li > h2 + time {
+  display: block;
+  background-color: #e4e3ef;
+  padding: 0.4em;
+  margin: 0;
+}
+
+#event-list ol li ~ li {
+  margin-top: 1em;
+}
+
+#event-list ol li h2 {
+  padding: 0.4em;
+  margin: 0;
+  background-color: #4368ad;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+#event-list ol li h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#event-list ol li h2 a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 720px) {
+  body > header, body > nav {
+    text-align: center;
+  }
+
+  body > header img {
+    float: none;
+    margin-right: 0;
+  }
+
+  body > header em {
+    display: none;
+  }
+
+  body > nav  em, body > nav > ul, body > footer > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body > nav > ul > li {
+    width: 100%;
+  }
+
+  body > nav > ul > li ~ li {
+    border-left: none;
+    border-top: 1px solid #fff;
+  }
+
+  body > footer {
+    text-align: center;
+  }
+
+  body > footer section {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  body > footer aside {
+    display: block;
+  }
+
+  body > footer section, body > footer aside {
+    float: none;
+  }
+
+  body > footer section ~ section {
+    margin-left: 0;
+  }
+
+  body > footer ul > li::before {
+    content: initial;
+    margin-right: 0;
+    float: none;
+  }
+
+  body > footer aside img {
+    float: none;
+  }
+}

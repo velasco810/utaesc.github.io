@@ -1,0 +1,12 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="/js/ga.js"></script>
+  {% for script in page.js %}
+    <script type="text/javascript" src="/js/{{ script }}.js"></script>
+  {% endfor %}
+</head>
