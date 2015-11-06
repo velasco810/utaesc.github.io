@@ -1,0 +1,68 @@
+.title {
+    	font-family: sans-serif;
+    	font-weight: 600;
+    	font-size: 3em;
+    	text-align: center;
+    	color:#4368ad;
+    	padding-top: 3%;
+    	border-style: solid;
+    	border-left: none;
+    	border-top: none;
+    	border-right:none;
+    	border-width: .05em;
+    	border-image-outset:.5em;  
+    }
+
+    .name {
+    	font-family: sans-serif;
+    	font-weight: 600;
+    	font-size: 1.2em;
+    	width: 65%;
+    	text-align: center;
+    	padding-top: 8%;
+    	}
+    .name a{
+    	color:#4368ad;
+    	text-decoration: none;
+    	float: left;
+
+    }
+    .name a:hover{
+    	color: #A4BCDF;
+    }
+   	.logo img {
+   		width: 50%;
+   		height: 20%;
+   		padding-top: 25%;
+   		
+   		
+   		
+   		}
+   	.logo2 img{
+   		width:30%;
+   		height:10%;
+		padding-top: 25%;
+		text-align: right;
+   		
+
+   	}
+   	.logo3 img{
+   		width: 50%;
+   		height: 28%;
+   		padding-top: 28%;
+   		
+   	}
+   	.logo4 img{
+ 		 width:25%;
+   		height: 95%;
+   		padding-top: 28%;
+   		
+   		
+   	}
+   	.logo5 img{
+ 		 width:25%;
+   		height: 55%;
+   		padding-top: 28%;
+   		
+   	
+   	}
