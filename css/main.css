@@ -239,6 +239,45 @@ body > footer ul > li::before {
   text-decoration: underline;
 }
 
+article, article > section {
+  clear: both;
+  overflow: hidden;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+figure.tile {
+  clear: left;
+  width: 224px;
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+figure.tile:first-child {
+  margin-top: 0.67em;
+}
+
+figure.tile > * {
+  width: 100%;
+  height: auto;
+}
+
+figure.tile ~ * {
+  margin-left: 240px;
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+
 @media only screen and (max-width: 720px) {
   body > header, body > nav {
     text-align: center;
@@ -297,5 +336,17 @@ body > footer ul > li::before {
 
   body > footer aside img {
     float: none;
+  }
+
+  figure.tile {
+    width: 64px;
+    float: right;
+    margin-left: 8px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  figure.tile ~ * {
+    margin-left: 0;
   }
 }
