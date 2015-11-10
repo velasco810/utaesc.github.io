@@ -1,0 +1,49 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+{% include header.html %}
+<header>
+<link rel="stylesheet" type="text/css" href="/css/OrgsPage.css">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1.1", {packages:["table"]});
+function drawVisualization() {
+
+      google.visualization.drawChart({
+         "containerId": "table",
+        
+         "dataSourceUrl": "https://docs.google.com/spreadsheets/d/1Q4VzJcZzpFVPEJ3xG3rdE-yClE2az6cgQ7rd35M0Nco/edit#gid=861274054",
+         "query":"select A,B,C,D,E,F,G,H,I,J",
+         "chartType": "Table",
+         "options": {
+           	"sort":"enable",
+           	"allowHtml":true,
+             "height": "auto",
+         "width":"auto",
+         }
+       });
+    }
+google.setOnLoadCallback(drawVisualization);
+</script>
+</header>
+    {% include nav.html %}
+    <!-- <main> -->
+      <body>
+      <p class="title">
+      Engineering Student Organizations
+      </p>
+      <div id="table">
+      </div>
+   <!--  </main> -->
+    {% include footer.html %}
+    
+  </body>
+
+  		
+ 
+</html>
